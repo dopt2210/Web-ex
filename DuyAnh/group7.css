@@ -82,6 +82,9 @@ p.content {
     font-family: 'Roboto', sans-serif;
     font-size: 5em;
 }
+.tilte:hover a{
+    color: var(--primary-color-hover);
+}
 
 .link {
     font-weight: bold;
