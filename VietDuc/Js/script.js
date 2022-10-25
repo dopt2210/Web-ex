@@ -12,13 +12,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Nav open close
+// Nav toggle
 let toggle = document.querySelector(".navOpen"),
   navOpenBtn = document.querySelector(".menu-content");
 toggle.onclick = function () {
   navOpenBtn.classList.toggle("open");
 };
-
+// message toggle
+let toggle1 = document.querySelector(".mess-icon"),
+  messOpenBtn = document.querySelector(".messageBox");
+toggle1.onclick = function () {
+  messOpenBtn.classList.toggle("open");
+};
 // Search
 let Box = document.querySelector(".search"),
   searchIcon = document.querySelector(".search-icon"),
@@ -79,3 +84,14 @@ sr.reveal(`.section-title, .section-subtitle, .section-description, .brand-image
 
 sr.reveal(`.about-imageContent, .menu-items`, {origin: 'left'})
 sr.reveal(`.about-details, .time-table`, {origin: 'right'})
+
+// popup newsletter
+const openPopup = document.getElementById("oPopup");
+const closePopup = document.getElementById("cPopup");
+const popup = document.getElementById("popup");
+openPopup.addEventListener("click", function() {
+  popup.classList.add("show");
+});
+closePopup.addEventListener("click", function() {
+  popup.classList.remove("show");
+});

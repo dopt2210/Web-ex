@@ -1,0 +1,157 @@
+.container1 {
+    display: inline-block;
+    background: white;
+    box-shadow: 0 5px 10px 10px rgb(41, 40, 40);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.col-3 {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+}
+
+.heading-section-about2 {
+    background: url(../../VietDuc/img/detam_2.jpg) no-repeat top center/cover;
+    padding-top: 55%;
+    position: relative;
+}
+
+.heading-section-about2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.heading-section-about2 p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.bang_tin {
+    padding: 50px 0 100px;
+}
+
+.headline {
+    padding: 45px 45px;
+}
+
+.bang_tin .list-item {
+    height: 100%;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+.bang_tin .image-content {
+    width: 100%;
+}
+
+.bang_tin .heading-content {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0 15px;
+}
+
+.bang_tin .subheading-content {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.bang_tin .des-content {
+    line-height: 28px;
+    opacity: 0.7;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    height: 272px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.5);
+}
+
+.sub-news .title {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.sub-news .title a {
+    background-color: #73ccc6;
+    color: #fff;
+    font-size: var(--small-font);
+    display: flex;
+    padding: 5px 15px;
+    transition: all 0.3s linear;
+}
+
+.sub-news .title a:hover {
+    color: var(--primary-color-hover);
+}
+
+.sub-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sub-nav a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.sub-nav a:hover {
+    color: #000;
+    background-color: var(--primary-color);
+}
+
+.sub-nav .act {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+@media screen and (max-width: 46.25em) {
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .col-3 {
+        margin-top: 30px;
+    }
+
+    .sub-nav {
+        margin-top: 30px;
+    }
+}

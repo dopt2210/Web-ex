@@ -1,0 +1,209 @@
+.heading-section-about2 {
+    background: url(../../VietDuc/img/detam_5.jpg) no-repeat top center/cover;
+    padding-top: 55%;
+    position: relative;
+}
+
+.heading-section-about2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.heading-section-about2 p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.container1 {
+    background: white;
+    box-shadow: 0 5px 10px 10px rgb(41, 40, 40);
+    transition: .5s ease;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.part1 {
+    color: #000;
+}
+
+.container1 img {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.shadow-1,
+.shadow-2,
+.shadow-3 {
+    position: relative;
+}
+
+.shadow-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) -1%, rgba(255, 255, 255, 0) 0%, rgba(222, 201, 173, 0) 50%, rgb(177, 138, 87) 95%, rgba(189, 148, 93, 1) 99%);
+    z-index: 1;
+}
+
+.father {
+    position: relative;
+}
+
+.row-color-1 {
+    background-color: #bd945d;
+
+}
+
+.left {
+    width: 48%;
+}
+
+.about-content {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading-content {
+    font-size: var(--h1-font);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-content .heading-content a {
+    text-decoration: none;
+    transition: all 0.3s linear;
+    font-weight: 600;
+}
+
+.heading-content a:hover {
+    color: #f1bc7a;
+    cursor: pointer;
+}
+
+.subheading-content {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: var(--h2-font);
+}
+
+.des-content {
+    line-height: 23px;
+    font-size: var(--font-medium);
+}
+
+.detail-content {
+    bottom: 40px;
+    text-decoration: none;
+    padding: 7px 63px;
+    display: inline-block;
+    border: 1.5px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    transition: all 0.3s ease-in;
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: white;
+}
+
+.row-color-1 a.detail-content:hover,
+.row-color-2 a.detail-content:hover,
+.row-color-3 .detail-content:hover {
+    background-color: #f2f2f2;
+    border-color: #000;
+    color: #000;
+}
+
+.right {
+    text-align: right;
+}
+
+.phai {
+    right: 20px;
+}
+
+.row-color-2 {
+    background-color: #8e5a2d;
+}
+
+.shadow-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(142, 90, 45, 1) -2%, rgb(134, 92, 55) 10%, rgba(194, 166, 142, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+
+}
+
+.row-color-3 {
+    background-color: rgb(46, 20, 2);
+}
+
+.row-color-3 h2.subheading-content {
+    font-weight: bold;
+}
+
+.shadow-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 57%, rgba(48, 22, 3) 97%, rgba(46, 20, 2, 1) 100%);
+}
+
+@media screen and (max-width: 37.75em) {
+
+    .shadow-3::before {
+        display: none;
+    }
+
+    .shadow-1::before {
+        display: none;
+    }
+
+    .shadow-2::before {
+        display: none;
+    }
+
+    .about-content {
+        padding-bottom: 10px;
+    }
+}

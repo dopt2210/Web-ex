@@ -1,0 +1,407 @@
+.container1 {
+    width: 100%;
+    background: white;
+}
+
+.heading-section-about2 {
+    background: url(../../VietDuc/img/detam_3.jpg ) no-repeat top center/cover;
+    padding-top: 55%;
+    position: relative;
+}
+
+.heading-section-about2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.heading-section-about2 p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.col-2 {
+    flex-basis: 50%;
+}
+
+.col-2-member-1 {
+    flex-basis: 30%;
+}
+
+.col-2-member-2 {
+    flex-basis: 70%;
+    height: 100%;
+}
+
+.col-5 {
+    flex-basis: 20%;
+    min-width: 150px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.part1 {
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.heading-container {
+    padding-top: 120px;
+    text-align: center;
+    color: #000;
+}
+
+.nguongoc-content {
+    padding: 0 20px;
+}
+
+.nguongoc-content .heading-content {
+    font-weight: 750;
+    margin-bottom: 10px;
+    font-size: var(--h1-font);
+}
+
+.nguongoc-content .subheading-content {
+    font-size: var(--h1-font);
+    margin-bottom: 10px;
+}
+
+.des-content {
+    line-height: 2;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.nguongoc-image-container {
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0px 15px rgba(237, 2, 2, 0.666);
+    border-radius: 1rem;
+}
+
+.pudding {
+    padding: 20px;
+}
+
+.nguongoc-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.nguongoc-image img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.nguongoc-image img:hover {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.thanhtuu {
+    text-align: center;
+}
+
+.heading-content {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.thanhtuu .subheading-content {
+    margin: 10px;
+    color: #c8a27a;
+}
+
+.thanhtuu span {
+    font-size: 62px;
+    color: #c8a27a;
+}
+
+.thanhtuu .list-section {
+    padding: 86px 30px;
+}
+
+.bar::before {
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 70px;
+    background-color: #c8a27a;
+    position: absolute;
+    top: 50%;
+    left: -5.5%;
+    transform: translateY(-50%);
+}
+
+.bar {
+    position: relative;
+}
+
+.highlight {
+    color: #fff;
+}
+
+.highlight .heading-container {
+    background-color: #1d140b;
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.highlight .highlight-content {
+    width: 100%;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../VietDuc/img/homeImg3.jpg);
+    padding: 160px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.highlight .col-2 {
+    position: relative;
+    text-align: center;
+}
+
+.highlight .highlight-item {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.highlight .col-2 .highlight-des {
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.highlight .col-2 img {
+    width: 100%;
+    transition: transform 0.6s linear;
+    border-radius: 20px;
+}
+
+.highlight .highlight-item:hover img {
+    transform: translateY(23%);
+}
+
+.highlight .highlight-item:hover .highlight-des {
+    display: block;
+}
+
+.thanh-vien .heading-container {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.thanh-vien-body {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px 100px;
+    background-color: #f2f2f2;
+}
+
+.thanh-vien-body .thanh-vien-container {
+    max-width: 1000px;
+    width: 100%;
+    /* background: red; */
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.thanh-vien-body .thanh-vien-container .main-card {
+    width: 200%;
+    display: flex;
+    /* background-color: #ccc; */
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+
+#two:checked~.main-card {
+    margin-left: -100%;
+}
+
+.thanh-vien .thanh-vien-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.thanh-vien-body .cards {
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+
+.thanh-vien-body .cards .card {
+    display: block;
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    padding: 80px 40px;
+    border-radius: 20px;
+    /* box-shadow: 0 0px 5px rgb(0 0 0 / 10%); */
+    transition: all 0.3s ease;
+}
+
+.thanh-vien-body .cards .card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 0px 5px rgb(0 0 0 / 10%);
+}
+
+.thanh-vien .thanh-vien-detail .thanh-vien-anh {
+    width: 145px;
+    height: 140px;
+    margin-bottom: 15px;
+    background-color: #c8a27a;
+    border-radius: 50%;
+    border: 1px solid #c8a27a;
+}
+
+.thanh-vien .thanh-vien-detail .thanh-vien-anh img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.thanh-vien-detail .mission {
+    font-weight: 600;
+    margin-top: 5px;
+    color: #c8a27a;
+}
+
+.thanh-vien-detail .thanh-vien-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.thanh-vien-detail .thanh-vien-media a {
+    line-height: 30px;
+    width: 30px;
+    margin: 0 4px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c8a27a;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s linear;
+}
+
+.thanh-vien-detail .thanh-vien-media a:hover {
+    border-color: #c8a27a;
+    background-color: #fff;
+    color: #000;
+}
+
+.button {
+    margin: 10px 0;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button label {
+    margin: 0 8px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.button .active {
+    background-color: #000;
+}
+
+.button .hai {
+    background-color: #fff;
+}
+
+#one:checked~.button .mot {
+    background-color: #000;
+
+}
+
+#one:checked~.button .hai {
+    background-color: #fff;
+}
+
+#two:checked~.button .mot {
+    background-color: #fff;
+}
+
+#two:checked~.button .hai {
+    background-color: #000;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+@media screen and (max-width: 46.25em) {
+    .subheading-content {
+        text-align: center;
+    }
+
+    .part1 {
+        flex-direction: column;
+    }
+
+    .thanhtuu .row {
+        flex-direction: column;
+    }
+
+    .bar::before {
+        display: none;
+    }
+
+    .thanh-vien-body .cards .card {
+        width: calc(100% / 2 - 10px);
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .thanh-vien-body .cards .card {
+        width: 100%;
+    }
+
+}
