@@ -1,0 +1,190 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../VietDuc/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-Info {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+.contact-Info i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-Form {
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.contact-Info,
+.contact-For {
+    flex: 1;
+}
+
+.contact-Form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.contact-Form .text-box {
+    background: #fff;
+    color: #000;
+    border: none;
+    width: calc(50% + 227px);
+    height: 30px;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.contact-Form .text-box:first-child {
+    margin-right: 20px;
+}
+
+.contact-Form textarea {
+    background: #fff;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 300px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-Form .send-btn {
+    background: #2E94E3;
+    float: right;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.contact-Form .send-btn:hover {
+    background: #0582E3;
+}
+
+/*css for alert message*/
+
+.alert_message {
+    z-index: 1;
+    background: #c7f2d1;
+    font-size: 20px;
+    padding: 20px 40px;
+    min-width: 150px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 5px;
+}
+
+.alert_error {
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 20px;
+    padding: 20px 40px;
+    min-width: 150px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid black;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+    .contact-Info {
+        display: none;
+    }
+
+    .contact-Form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 43.75em) {
+    .contact-Info {
+        display: none;
+    }
+
+    .contact-section {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-Form .text-box {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .contact .text-box {
+        padding: 12px 20px;
+        width: 90%;
+    }
+
+    .contact-Form {
+        margin-right: 0px;
+    }
+
+    .contact textarea {
+        padding: 0px;
+    }
+
+    .contact-Form h2 {
+        width: 400px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .send-btn {
+        align-self: center;
+    }
+}
+
+.logo-content img {
+    max-width: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+}
