@@ -155,7 +155,7 @@
     bottom: 2rem;
     right: -5rem;
     padding: 2rem;
-    max-width: 360px;
+    max-width: 35rem;
     width: 100%;
     text-align: center;
     border: 6px solid var(--section-bg);
@@ -311,7 +311,7 @@
 /* Brand */
 .brand-images {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
     justify-content: space-between;
     justify-items: center;
@@ -323,11 +323,13 @@
     width: 150px;
     object-fit: contain;
     opacity: 0.7;
+    filter: grayscale(100);
     background-color: var(--white-color);
     border-radius: 1rem;
 }
 
 .brand-img:hover {
+    filter: grayscale(0);
     opacity: 1;
 }
 
@@ -434,12 +436,13 @@
 }
 
 .newsletter .logo-icon {
+    margin-top: 2rem;
     font-size: 3rem;
 }
 
 .newsletter .close-icon {
-    position:relative;
-    transform: translateX(-13.5rem);
+    position: absolute;
+    transform: translate(-13.5rem, -1rem);
     color: var(--text-color);
     background-color: var(--primary-color);
     border-top-left-radius: 50%;
@@ -471,8 +474,9 @@
 
 .newsletter-button {
     width: 40%;
+    margin: 2rem auto;
     padding: 1.5rem 1rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 
@@ -529,14 +533,13 @@
     transform: translateY(-10%);
 }
 
-
 .messageBox {
     position: fixed;
     padding: 0 3rem;
     margin: 0 auto;
     bottom: 7rem;
     right: 6rem;
-    max-width: 350px;
+    max-width: 35rem;
     width: 100%;
     height: 60%;
     background-color: var(--white-color);
@@ -632,6 +635,7 @@
 
     .about-imageContent {
         height: 400px;
+        justify-self: center;
     }
 
     .aboutImg-textBox {
@@ -649,9 +653,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about-lists{
+    .about-buttons {
         justify-content: center;
     }
+
+    .about-lists {
+        justify-content: center;
+    }
+
     .swiper-pagination-bullet {
         visibility: hidden;
     }
@@ -663,7 +672,8 @@
     .section {
         padding: 7rem 1rem;
     }
-    .section-description{
+
+    .section-description {
         padding: 0 10rem;
     }
 
@@ -678,46 +688,68 @@
     .about .content-description {
         text-align: center;
     }
-    .about-details{
+
+    .about-details {
         justify-content: center;
     }
-    .menu .menu-content{
-        grid-template-columns: 1fr ;
+
+    .menu .menu-content {
+        grid-template-columns: 1fr;
         row-gap: 3rem;
     }
-    .footer-container{
+
+    .footer-container {
         row-gap: 1.5rem;
     }
-    .review-quote{
+
+    .review-quote {
         padding: 0 5rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .container{
+    .container {
         padding: 0;
     }
+
     .brand-images {
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
-    .footer .footer-container{
+
+    .footer .footer-container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
     }
-    .about-buttons{
+
+    .about-buttons {
         justify-content: center;
     }
-    .about-imageContent{
-        width: 90%;
+
+    .about-imageContent {
+        height: 300px;
     }
-    .section-description, .review-quote{
-        padding: 0 ;
+
+    .aboutImg-textBox {
+        transform: translateX(-1rem);
+        width: 20rem;
     }
-    .footer-content{
+
+    .messageBox {
+        width: 25rem;
+        transform: translateX(5rem);
+    }
+
+    .section-description,
+    .review-quote {
+        padding: 0;
+    }
+
+    .footer-content {
         justify-items: center;
     }
-    .footer-linkContent{
+
+    .footer-linkContent {
         justify-content: center;
     }
 }

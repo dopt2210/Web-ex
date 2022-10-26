@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Green Tea</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/order.css">
+  <link rel="stylesheet" href="../../VietDuc/Css/custom.css">
+  <link rel="stylesheet" href="../../VietDuc/Css/footer.css">
+  <link rel="stylesheet" href="../../VietDuc/Css/header-nav.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container flex">
+      <a href="../../VietDuc/Home.html" class="logo-content flex">
+        <img src="../../VietDuc/img/Logo.png" alt="" class="logo-icon">
+      </a>
+      <div class="search flex">
+        <label>
+          <i class='bx bx-search search-icon'></i>
+          <input type="text" placeholder="Search here">
+          <i class='bx bx-x close-icon'></i>
+        </label>
+      </div>
+      <div class="menu-content flex">
+        <ul class="menu-list flex">
+          <li><a href="../../VietDuc/Home.html" class="nav-link">Home</a></li>
+          <li><a href="../../PhanAnh/About.html" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link active-nav">Menu</a></li>
+          <li><a href="../../VietDuc/Home.html#review" class="nav-link">Review</a></li>
+        </ul>
+
+        <div class="media-icon flex">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-github"></i></a>
+          <a href=""><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <i class="bx bx-menu navOpen"></i>
+
+    </nav>
+  </header>
+
+
+
+  <main>
+    <div class="backup"></div>
+    <div class="container1">
+      <div class="item-container">
+        <div class="row">
+          <div class="col-2">
+            <div class="image-container">
+              <img src="../../DuyAnh/images/Greentea.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="order-content">
+              <h1 class="heading-content">Green Tea</h1>
+              <h2 class="price" id="money" value="100"></h2>
+              <p class="size"> Chọn size </p>
+              <div class="row order-row">
+                <div class="col-3">
+                  <input type="radio" name="size" id="small" value="nho">
+                  <div class="size-order s-size"><label for="small">Nhỏ + 0.00$</label> </div>
+                </div>
+                <div class="col-3">
+                  <input type="radio" name="size" id="mid" value="vua">
+                  <div class="size-order m-size"><label for="mid">Vừa + 6.00$</label></div>
+                </div>
+                <div class="col-3">
+                  <input type="radio" name="size" id="big" value="to">
+                  <div class="size-order b-size"><label for="big">Lớn + 10.00$</label> </div>
+                </div>
+
+              </div>
+              <p class="topping">Chọn topping</p>
+              <div class="topping-selector">
+                <div class="row row-1">
+                  <div class="col-2">
+                    <input type="checkbox" name="top" id="top1"
+                      onclick="if(this.checked){addmoney(10)} else{remain(10)}">
+                    <div class="size-order topping-order1"> <label for="top1">Kem phô mai machiato + 10.00$</label>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <input type="checkbox" name="top" id="top2"
+                      onclick="if(this.checked){addmoney(10)} else{remain(10)}">
+                    <div class="size-order topping-order2"> <label for="top2">Đào Miếng + 10.00$</label> </div>
+                  </div>
+                </div>
+                <div class="row row-2">
+                  <div class="col-2 ">
+                    <input type="checkbox" name="top" id="top3"
+                      onclick="if(this.checked){addmoney(10)} else{remain(10)}">
+                    <div class="size-order topping-order3"> <label for="top3">Trân Châu Trắng + 10.00 $</label> </div>
+                  </div>
+                  <div class="col-2">
+                    <input type="checkbox" name="top" id="top4"
+                      onclick="if(this.checked){addmoney(10)} else{remain(10)}">
+                    <div class="size-order topping-order4"><label for="top4">Nha Đam + 10.00 $</label> </div>
+                  </div>
+                </div>
+                <div class="row row-3">
+                  <input type="checkbox" name="top" id="top5" onclick="if(this.checked){addmoney(10)} else{remain(10)}">
+                  <div class="size-order topping-order5"> <label for="top5">Hạt sen + 10.00 $</label> </div>
+                </div>
+              </div>
+              <a href="">
+                <div class="button-order"> Đặt giao hàng tận nơi </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="des-content">
+          <h1 class="heading-content">Mô tả sản phẩm</h1>
+          <p class="des-detail">Green Tea (Trà xanh) có nguồn gốc từ Trung Quốc và Ấn Độ, đã được tiêu thụ và ca ngợi vì
+            lợi ích sức khỏe của nó trong nhiều thế kỷ trên toàn cầu, nhưng gần đây mới trở nên phổ biến ở Hoa Kỳ.
+
+            Trà là thức uống được tiêu thụ nhiều nhất trên thế giới sau nước. Tuy nhiên, 78 phần trăm trà được tiêu thụ
+            trên toàn thế giới là màu đen và chỉ khoảng 20 phần trăm là màu xanh. </p>
+        </div>
+        <div class="relative-product">
+          <h1 class="heading-content">Sản phẩm liên quan</h1>
+          <div class="row">
+            <div class="col-4">
+              <div class="image-container1">
+                <a href="./Matcha.html">
+                  <img src="../images/Matchatea.jpg" alt="">
+                </a>
+              </div>
+              <h3 class="name">Matcha Tea</h3>
+              <p class="price">300$</p>
+            </div>
+            <div class="col-4">
+              <a href="./olongtea.html">
+                <img src="../images/Oolongtea.jpg" alt="">
+              </a>
+              <h3 class="name">Oolong Tea</h3>
+              <p class="price">100$</p>
+            </div>
+            <div class="col-4">
+              <a href="./lemontea.html">
+                <img src="../images/Lemontea.jpg" alt="">
+              </a>
+              <h3 class="name">Lemon Tea</h3>
+              <p class="price">100$</p>
+            </div>
+            <div class="col-4">
+              <a href="./MilkTea.html">
+                <img src="../images/Milktea.jpg" alt="">
+              </a>
+              <h3 class="name">Milk Tea</h3>
+              <p class="price">400$</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+
+  <footer class="section footer">
+    <div class="footer-container container">
+      <div class="footer-content">
+        <a href="../../VietDuc/Home.html" class="logo-content flex">
+          <img src="../../VietDuc/img/BannerWhite-16-9.jpg" alt="" class="logo-icon">
+        </a>
+
+        <p class="content-description">Coffee is a cafe that serve many variant of coffee and other dishes with very
+          comfortable place.</p>
+
+        <div class="footer-location flex">
+          <i class='bx bx-map map-icon'></i>
+
+          <div class="location-text">
+            3 Đ. Cầu Giấy, Láng Thượng, Đống Đa, Hà Nội
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-linkContent">
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Facility</h4>
+
+          <li><a href="#" class="footer-link">Private Room</a></li>
+          <li><a href="#" class="footer-link">Meeting Room</a></li>
+          <li><a href="#" class="footer-link">Event Room</a></li>
+          <li><a href="#" class="footer-link">Creative Studio</a></li>
+          <li><a href="#" class="footer-link">Custom Room</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Facility</h4>
+
+          <li><a href="#" class="footer-link">Coffee</a></li>
+          <li><a href="#" class="footer-link">Beverages</a></li>
+          <li><a href="#" class="footer-link">Dishes</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Support</h4>
+
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">FAQs</a></li>
+          <li><a href="#" class="footer-link">Private Policy</a></li>
+          <li><a href="#" class="footer-link">Help Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyRight flex">
+      <div class="media-icon flex">
+        <a href=""><i class="bx bxl-facebook"></i></a>
+        <a href=""><i class="bx bxl-twitter"></i></a>
+        <a href=""><i class="bx bxl-instagram-alt"></i></a>
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-youtube"></i></a>
+      </div>
+      &#169; Group 7 Utc
+      <span id="oPopup"><i class='bx bx-chat'></i> For Newsletter</span>
+    </div>
+  </footer>
+
+  <script src="../Js/script.js"></script>
+  <script src="../Js/order.js"></script>
+</body>
+
+</html>
