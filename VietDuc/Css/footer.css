@@ -93,3 +93,19 @@
     transform: translateY(-10%);
 color: var(--text-color);
 }
+@media screen and (max-width: 600px) {
+
+    .footer-content {
+        justify-items: center;
+    }
+
+    .footer-linkContent {
+        justify-content: center;
+    }
+
+    .footer .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+}

@@ -476,7 +476,6 @@
     width: 40%;
     margin: 2rem auto;
     padding: 1.5rem 1rem;
-    /* margin-bottom: 2rem; */
 }
 
 
@@ -653,28 +652,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .section {
+        padding: 7rem 1rem;
+    }
+
     .about-buttons {
         justify-content: center;
     }
 
     .about-lists {
         justify-content: center;
-    }
-
-    .swiper-pagination-bullet {
-        visibility: hidden;
-    }
-
-    .swiper-navBtn {
-        visibility: visible;
-    }
-
-    .section {
-        padding: 7rem 1rem;
-    }
-
-    .section-description {
-        padding: 0 10rem;
     }
 
     .about-content {
@@ -691,6 +678,18 @@
 
     .about-details {
         justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        visibility: hidden;
+    }
+
+    .swiper-navBtn {
+        visibility: visible;
+    }
+
+    .section-description {
+        padding: 0 10rem;
     }
 
     .menu .menu-content {
@@ -715,11 +714,6 @@
     .brand-images {
         grid-template-columns: 1fr;
         row-gap: 2rem;
-    }
-
-    .footer .footer-container {
-        grid-template-columns: 1fr;
-        row-gap: 3rem;
     }
 
     .about-buttons {
@@ -752,4 +746,10 @@
     .footer-linkContent {
         justify-content: center;
     }
+
+    .footer .footer-container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
 }
