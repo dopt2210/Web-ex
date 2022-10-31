@@ -395,7 +395,10 @@ input[type="radio"] {
     .bar::before {
         display: none;
     }
-
+    .highlight .highlight-item:hover .highlight-des
+    {
+        display: none;
+    }
     .thanh-vien-body .cards .card {
         width: calc(100% / 2 - 10px);
         margin: 20px 0 10px 0;
@@ -405,6 +408,10 @@ input[type="radio"] {
 @media screen and (max-width: 37.5em) {
     .thanh-vien-body .cards .card {
         width: 100%;
+    }
+    .highlight .highlight-item:hover .highlight-des
+    {
+        display: none;
     }
 
 }
