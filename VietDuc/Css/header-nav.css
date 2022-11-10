@@ -19,7 +19,7 @@
 
 /* nav */
 .nav {
-    position: relative;
+    /* position: relative; */
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -95,15 +95,19 @@
     pointer-events: all;
 }
 
+.menu-list {
+    column-gap: 2rem;
+}
+
 .nav-link {
     color: var(--white-color);
     font-weight: var(--font-semi-bold);
     position: relative;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
-.menu-list {
-    column-gap: 2rem;
+.nav-link:hover{
+    color: var(--primary-color);
 }
 
 .nav-link::before {
@@ -127,6 +131,10 @@
     background-color: var(--text-color);
 }
 
+.header-active .nav-link:hover{
+    color: var(--primary-color);
+}
+
 .header .nav .navOpen {
     font-size: 3rem;
 }
@@ -139,6 +147,7 @@
     color: var(--text-color);
 }
 
+/*Media for responsive */
 .media-icons {
     column-gap: 1rem;
 }

@@ -12,14 +12,14 @@
 
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.footer-content {
-    display: grid;
-    row-gap: 3rem;
+.footer .footer-content{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer .logo-content {
@@ -38,29 +38,6 @@
 .footer .map-icon {
     font-size: 3rem;
     margin-right: 1rem;
-}
-
-.footer-linkContent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
-}
-
-.footer-links {
-    display: grid;
-    row-gap: 1rem;
-    font-weight: var(--font-medium);
-    color: var(--white-color);
-}
-
-.footer-link {
-    font-size: var(--small-font);
-    color: rgba(255, 255, 255, 0.5);
-    transition: var(--tran-0-3);
-}
-
-.footer-link:hover {
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-copyRight {
@@ -91,18 +68,10 @@
 }
 .footer-copyRight .media-icon a:hover{
     transform: translateY(-10%);
-color: var(--text-color);
+    color: var(--text-color);
 }
+
 @media screen and (max-width: 600px) {
-
-    .footer-content {
-        justify-items: center;
-    }
-
-    .footer-linkContent {
-        justify-content: center;
-    }
-
     .footer .footer-container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
